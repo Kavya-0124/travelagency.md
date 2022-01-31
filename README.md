@@ -313,3 +313,80 @@
   ~~~
   
   </details>
+  
+  ### CSS Code
+  
+  <details>
+  <summary>Code</summary>
+  
+  ~~~
+  
+  .slider .btn {
+  margin-top: 20px;
+}
+
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+.section-contact h5 {
+  margin-bottom: 30px;
+}
+  
+  ~~~
+  
+  </details>
+  
+  ### JS
+  
+  <details>
+  <summary>Code</summary>
+  
+  ~~~
+  
+  // Side Menu
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+    // Scrollspy
+    const ss = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(ss, {});
+
+    // Material Boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {});
+
+    // Auto Complete
+    const ac = document.querySelector('.autocomplete');
+    M.Autocomplete.init(ac, {
+        data: {
+          "Aruba": null,
+          "Cancun Mexico": null,
+          "Hawaii": null,
+          "Florida": null,
+          "California": null,
+          "Jamaica": null,
+          "Europe": null,
+          "The Bahamas": null,
+        }
+      });
+  
+  ~~~
+  
+  </details>
